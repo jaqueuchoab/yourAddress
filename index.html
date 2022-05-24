@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <title>Your Address</title>
+  </head>
+  <body>
+    <section class="content">
+      <h2 id="title">Digite seu cep</h2>
+      <input
+        type="text"
+        name="cep"
+        id="cep"
+        placeholder="Digite de acordo com a formatação 00000-000"
+        pattern="[0-9-]"
+      />
+      <input type="submit" value="Buscar" class="submit" />
+    </section>
+    <a><span>CEP inválido ou não encontrado na base de dados, tente novamente!</span></a>
+    <h3>Carregando :&rpar;</h3>
+    <img class="locationIndex" src="./img/endereco-fiscal.png" alt="" />
+    <section class="content-result">
+      <div id="content">
+        <h1>Característiscas do seu endereço:</h1>
+        <p id="value"></p>
+      </div>
+      <input type="submit" value="Nova pesquisa" id="newSeach" />
+    </section>
+    <div id="circleOne" class="circles"></div>
+    <div id="circleTwo" class="circles"></div>
+  </body>
+  <script src="./fetch.js"></script>
+</html>

@@ -1,0 +1,144 @@
+@media (max-width: 320px) {
+  /*INDEX PAGE*/
+  /*titulo Index*/
+  h2#title {
+    font-size: 40px;
+    letter-spacing: none;
+    line-height: 58px;
+  }
+
+  section.content{
+    position: fixed;
+    top: 35px;
+  }
+
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 18.56rem;
+    }
+  }
+
+  /*span de erro*/
+  span{
+    margin-top: 4rem;
+    width: 245px;
+    padding: 0 0.2rem;
+    font-size: 0.85rem;
+    height: 65px;
+  }
+
+  /*input Index*/
+  input#cep {
+    width: 18.7rem;
+    padding: 0.6rem 0 0.5rem 0;
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  input#cep::placeholder {
+    color: rgba(0, 98, 10, 0.932);
+    font-weight: 300;
+    font-size: 12px;
+  }
+
+  /*circles Index*/
+  .circles {
+    width: 180px;
+    height: 180px;
+  }
+
+  /*botãoIndex*/
+  .submit {
+    font-size: 0.9rem;
+    width: 120px;
+    margin-top: 1rem;
+    padding: 0.4rem;
+  }
+
+  /*imagemIndex*/
+  .locationIndex {
+    height: 180px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  @keyframes upImage {
+    from {
+      transform: translate3d();
+    }
+    to {
+      transform: translate3d(0, 16px, 0);
+    }
+  }
+
+  /*footer*/
+  footer {
+    display: none;
+  }
+
+  /*alinhar content*/
+  .content {
+    margin-top: 150px;
+  }
+
+  /*sections Index e Result*/
+  section {
+    z-index: 9000;
+  }
+
+  /*loading page*/
+  h3 {
+    font-size: 30px;
+  }
+
+  .showLoading {
+    animation: none;
+  }
+
+  h3.showLoading {
+    top: 110px;
+  }
+
+  .locationIndex.showLoading{
+    top: 200px;
+  }
+
+  /*result page*/
+  h1{
+    font-size: 1.2rem;
+  }
+
+  p#value{
+    font-size: 0.96rem;
+  }
+
+  /*container de resultado*/
+  section.content-result {
+    width: 255px;
+    height: 400px;
+    padding: 1rem;
+  }
+
+  /*container com conteudo*/
+  #content {
+    padding-bottom: 13px;
+  }
+
+  /*imagem ResultPage*/
+  .locationIndex.displayImage {
+    margin-top: 50px;
+  }
+
+  /*botão ResultPace*/
+  #newSeach {
+    text-align: center;
+    z-index: 6000;
+    font-size: 0.9rem;
+    padding: 0.5rem;
+    width: 125px;
+    margin-bottom: 0.8rem;
+  }
+}
